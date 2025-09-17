@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+<<<<<<< HEAD
         <item>@font/exo_2_bold</item>
         <item>@font/exo_2_thin</item>
+=======
+        <item>@font/montserrat_subrayada</item>
+>>>>>>> 3663a0169757ae6ab6be59941960c814c0bf03b4
     </array>
 </resources>
