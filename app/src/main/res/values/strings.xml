@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">history-page</string>
+    <string name="bgabu1">Background Abu Abu1</string>
+    <string name="bgabu2">Backgorund Abu Abu2</string>
+    <string name="judul">Cathédrale Notre-Dame de Rouen</string>
+    <string name="penjelasan">Katedral Rouen adalah sebuah gereja katedral Katolik yang terletak di kota Rouen, Normandia, Prancis. Gereja ini merupakan tempat berkedudukannya Keuskupan Agung Rouen. Katedral ini dibangun dengan gaya arsitektur Gotik</string>
+    <string name="nxtbtn">Next Button</string>
+    <string name="prvsbtn">Previous Button</string>
+    <string name="bangunanpng">Bangunan Png</string>
 </resources>
