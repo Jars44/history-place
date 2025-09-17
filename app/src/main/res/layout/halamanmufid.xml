@@ -82,7 +82,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/nobg"
-        android:contentDescription="@string/bangunanpng"/>
+        android:contentDescription="C@string/bangunanpng"/>
 
     <TextView
         android:id="@+id/judul"
