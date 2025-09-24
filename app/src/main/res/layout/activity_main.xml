@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btn_move"
         android:layout_width="123dp"
         android:layout_height="155dp"
         android:scaleType="centerCrop"
@@ -52,7 +52,7 @@
         android:contentDescription="rouen"/>
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imageview21"
         android:layout_width="166dp"
         android:layout_height="160dp"
         android:contentDescription="@null"
@@ -65,7 +65,7 @@
         app:srcCompat="@drawable/antique" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/imageview20"
         android:layout_width="163dp"
         android:layout_height="154dp"
         android:contentDescription="@null"
@@ -91,7 +91,7 @@
         app:srcCompat="@drawable/red_notepaper_pin_ilustration_push_pin_isolated_on_the_white_background_free_png" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/btnSecondPage"
         android:layout_width="116dp"
         android:layout_height="110dp"
         android:contentDescription="@null"
@@ -105,7 +105,7 @@
         app:srcCompat="@drawable/colosseo_2020" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/btnThirdPage"
         android:layout_width="135dp"
         android:layout_height="135dp"
         android:contentDescription="Branden"
@@ -132,7 +132,7 @@
         app:srcCompat="@drawable/frame" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/btn"
         android:layout_width="127dp"
         android:layout_height="167dp"
         android:contentDescription="Menara Pisa"

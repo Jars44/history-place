@@ -5,50 +5,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Background -->
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/zbg"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/zbg" />
 
+    <!-- Menara Pisa -->
     <ImageView
         android:id="@+id/imageView11"
-        android:layout_width="518dp"
-        android:layout_height="540dp"
-        app:srcCompat="@drawable/pisa"
-        tools:layout_editor_absoluteX="-54dp"
-        tools:layout_editor_absoluteY="-18dp" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/blackBlock"
+        app:srcCompat="@drawable/pisa" />
 
+    <!-- Block Hitam Transparan -->
     <View
         android:id="@+id/blackBlock"
-        android:layout_width="372dp"
-        android:layout_height="234dp"
-        android:layout_marginBottom="48dp"
-        android:background="@drawable/ic_launcher_shape"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <View
-        android:layout_width="411dp"
-        android:layout_height="355dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/blacktransparentbg"
+        app:layout_constraintHeight_percent="0.4"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Judul -->
     <TextView
-        android:layout_width="371dp"
-        android:layout_height="229dp"
-        android:padding="10dp"
+        android:id="@+id/titleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="TOWER OF PISA"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@+id/blackBlock"
+        app:layout_constraintStart_toStartOf="@+id/blackBlock"
+        app:layout_constraintEnd_toEndOf="@+id/blackBlock" />
+
+    <!-- Deskripsi dengan background ic_launcher_shape -->
+    <TextView
+        android:id="@+id/textDesc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:background="@drawable/ic_launcher_shape"
         android:text="Menara Pisa dibangun pada 1173 sebagai menara lonceng Katedral Pisa di Italia. Tingginya sekitar 56 meter dengan material utama marmer putih. Karena fondasinya berdiri di atas tanah lunak, menara mulai miring bahkan sebelum selesai dibangun. Pekerjaan sempat terhenti lebih dari satu abad karena perang dan masalah teknis, lalu akhirnya rampung pada abad ke-14. Pada abad ke-20, menara diperkuat agar tidak roboh, kemiringannya dikurangi tetapi tetap dipertahankan sebagai ciri khas. Kini Menara Pisa menjadi ikon arsitektur Italia sekaligus Situs Warisan Dunia UNESCO."
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="452dp" />
-
+        android:gravity="top"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintBottom_toBottomOf="@id/blackBlock"
+        app:layout_constraintStart_toStartOf="@id/blackBlock"
+        app:layout_constraintEnd_toEndOf="@id/blackBlock" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Historypage">
         <activity
-            android:name=".halamazidan"
+            android:name="halamanmufid"
             android:exported="false" />
         <activity
-            android:name=".halamanzidan"
+            android:name="halamanzidan"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
