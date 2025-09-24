@@ -14,8 +14,10 @@
         android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/bg" />
 
     <TextView
@@ -50,9 +52,11 @@
         android:layout_width="386dp"
         android:layout_height="113dp"
         android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/scrap"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="295dp" />
+        android:contentDescription="Scrap"/>
 
     <ImageView
         android:id="@+id/imageView11"
@@ -65,7 +69,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.657"
-        app:srcCompat="@drawable/scrap" />
+        app:srcCompat="@drawable/scrap"
+        android:contentDescription="@null"/>
 
     <TextView
         android:id="@+id/textView"
@@ -119,5 +124,36 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/antique_gold_picture_frame_isolated_on_transparent_background_png" />
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="54dp"
+        android:layout_height="62dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128"
+        app:srcCompat="@drawable/img_shadow"
+        android:contentDescription="Button Next"/>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="54dp"
+        android:layout_height="62dp"
+        android:background="@null"
+        android:rotationY="-180"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912"
+        app:srcCompat="@drawable/img_shadow"
+        android:contentDescription="Button Previous"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
