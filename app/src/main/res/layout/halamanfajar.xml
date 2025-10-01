@@ -130,15 +130,15 @@
         android:layout_width="54dp"
         android:layout_height="62dp"
         android:background="@null"
+        android:contentDescription="Button Next"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.829"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128"
-        app:srcCompat="@drawable/img_shadow"
-        android:contentDescription="Button Next"/>
+        app:layout_constraintVertical_bias="0.216"
+        app:srcCompat="@drawable/img_shadow" />
 
     <ImageButton
         android:id="@+id/back"
