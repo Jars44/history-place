@@ -12,10 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Historypage">
         <activity
-            android:name="halamanmufid"
+            android:name=".Fiveactivity"
             android:exported="false" />
         <activity
-            android:name="halamanzidan"
+            android:name=".Fouractivity"
+            android:exported="false" />
+        <activity
+            android:name=".Thirdactivity"
+            android:exported="false" />
+        <activity
+            android:name=".Secondactivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sixactivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

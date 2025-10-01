@@ -84,7 +84,7 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58" />
+        app:layout_constraintVertical_bias="0.595" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -101,15 +101,15 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="265dp"
-        android:layout_height="251dp"
+        android:layout_width="266dp"
+        android:layout_height="245dp"
         android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.122"
+        app:layout_constraintVertical_bias="0.14"
         app:srcCompat="@drawable/pngtree_old_picture_frame_png_image_11513099" />
 
     <ImageView
@@ -145,15 +145,15 @@
         android:layout_width="54dp"
         android:layout_height="62dp"
         android:background="@null"
+        android:contentDescription="Button Previous"
         android:rotationY="-180"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.912"
-        app:srcCompat="@drawable/img_shadow"
-        android:contentDescription="Button Previous"/>
+        app:layout_constraintVertical_bias="0.911"
+        app:srcCompat="@drawable/img_shadow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

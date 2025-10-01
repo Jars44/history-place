@@ -9,16 +9,17 @@
 
     <ImageView
         android:id="@+id/background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/bg"
-        android:contentDescription="@null"/>
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bg" />
 
     <ImageView
         android:id="@+id/bangunanabuabu2"
@@ -61,7 +62,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.167"
+        app:layout_constraintVertical_bias="0.213"
         app:srcCompat="@drawable/wave" />
 
     <ImageView
@@ -75,7 +76,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623"
+        app:layout_constraintVertical_bias="0.591"
         app:srcCompat="@drawable/wave" />
 
     <ImageView
@@ -108,10 +109,10 @@
 
     <TextView
         android:id="@+id/textpenjelasan"
-        android:layout_width="168dp"
-        android:layout_height="238dp"
+        android:layout_width="161dp"
+        android:layout_height="278dp"
         android:layout_marginStart="28dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="24dp"
         android:fontFamily="@font/aclonica"
         android:letterSpacing="0.1"
         android:shadowColor="@color/material_dynamic_neutral0"
@@ -120,6 +121,7 @@
         android:shadowRadius="20"
         android:text="@string/penjelasan"
         android:textColor="#FFFFE0"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

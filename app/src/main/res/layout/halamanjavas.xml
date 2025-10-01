@@ -27,7 +27,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/blackBlock"
-        app:srcCompat="@drawable/pisa" />
+        app:srcCompat="@drawable/pisabg" />
 
     <!-- Block Hitam Transparan -->
     <View
@@ -71,5 +71,37 @@
         app:layout_constraintBottom_toBottomOf="@id/blackBlock"
         app:layout_constraintStart_toStartOf="@id/blackBlock"
         app:layout_constraintEnd_toEndOf="@id/blackBlock" />
+
+    <ImageButton
+        android:id="@+id/butonnext"
+        android:layout_width="81dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="127dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112"
+        app:srcCompat="@drawable/img_shadow" />
+
+    <ImageButton
+        android:id="@+id/butonprevious"
+        android:layout_width="81dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="127dp"
+        android:background="@null"
+        android:rotation="0"
+        android:rotationY="180"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112"
+        app:srcCompat="@drawable/img_shadow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
