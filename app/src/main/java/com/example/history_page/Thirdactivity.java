@@ -32,12 +32,15 @@ public class Thirdactivity extends AppCompatActivity {
         btnNext.setOnClickListener(v -> {
             Intent intent = new Intent(Thirdactivity.this, Fouractivity.class);
             startActivity(intent);
+            finish(); // opsional: supaya SecondActivity ditutup
         });
         ImageButton btnHome = findViewById(R.id.butonhome); // pastikan ID sama di XML
 
         btnHome.setOnClickListener(v -> {
             Intent intent = new Intent(Thirdactivity.this, MainActivity.class);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_up, R.anim.slide_down);
+            finish(); // opsional: supaya SecondActivity ditutup
         });
     }
 }

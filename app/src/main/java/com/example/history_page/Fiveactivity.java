@@ -29,12 +29,15 @@ public class Fiveactivity extends AppCompatActivity {
         btnNext.setOnClickListener(v -> {
             Intent intent = new Intent(Fiveactivity.this, Sixactivity.class);
             startActivity(intent);
+            finish(); // opsional: supaya SecondActivity ditutup
         });
         ImageButton btnHome = findViewById(R.id.btnhome); // pastikan ID sama di XML
 
         btnHome.setOnClickListener(v -> {
             Intent intent = new Intent(Fiveactivity.this, MainActivity.class);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_up, R.anim.slide_down);
+            finish(); // opsional: supaya SecondActivity ditutup
         });
     }
 }

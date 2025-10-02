@@ -29,12 +29,15 @@ public class Secondactivity extends AppCompatActivity {
         btnNext.setOnClickListener(v -> {
             Intent intent = new Intent(Secondactivity.this, Thirdactivity.class);
             startActivity(intent);
+            finish(); // opsional: supaya SecondActivity ditutup
         });
         ImageButton btnHome = findViewById(R.id.buttonmenu); // pastikan ID sama di XML
 
         btnHome.setOnClickListener(v -> {
             Intent intent = new Intent(Secondactivity.this, MainActivity.class);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_up, R.anim.slide_down);
+            finish(); // opsional: supaya SecondActivity ditutup
         });
     }
 }
