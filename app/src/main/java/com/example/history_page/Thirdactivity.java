@@ -33,5 +33,11 @@ public class Thirdactivity extends AppCompatActivity {
             Intent intent = new Intent(Thirdactivity.this, Fouractivity.class);
             startActivity(intent);
         });
+        ImageButton btnHome = findViewById(R.id.butonhome); // pastikan ID sama di XML
+
+        btnHome.setOnClickListener(v -> {
+            Intent intent = new Intent(Thirdactivity.this, MainActivity.class);
+            startActivity(intent);
+        });
     }
 }

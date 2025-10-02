@@ -30,5 +30,11 @@ public class Sixactivity extends AppCompatActivity {
             Intent intent = new Intent(Sixactivity.this, MainActivity.class);
             startActivity(intent);
         });
+        ImageButton btnHome = findViewById(R.id.homehome); // pastikan ID sama di XML
+
+        btnHome.setOnClickListener(v -> {
+            Intent intent = new Intent(Sixactivity.this, MainActivity.class);
+            startActivity(intent);
+        });
     }
 }

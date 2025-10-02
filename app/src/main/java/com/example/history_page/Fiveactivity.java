@@ -3,11 +3,8 @@ package com.example.history_page;
 import android.os.Bundle;
 import android.widget.ImageButton;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 import android.content.Intent;
 
 
@@ -31,6 +28,12 @@ public class Fiveactivity extends AppCompatActivity {
 
         btnNext.setOnClickListener(v -> {
             Intent intent = new Intent(Fiveactivity.this, Sixactivity.class);
+            startActivity(intent);
+        });
+        ImageButton btnHome = findViewById(R.id.btnhome); // pastikan ID sama di XML
+
+        btnHome.setOnClickListener(v -> {
+            Intent intent = new Intent(Fiveactivity.this, MainActivity.class);
             startActivity(intent);
         });
     }

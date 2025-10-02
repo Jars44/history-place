@@ -33,5 +33,11 @@ public class Fouractivity extends AppCompatActivity {
             Intent intent = new Intent(Fouractivity.this, Fiveactivity.class);
             startActivity(intent);
         });
+        ImageButton btnHome = findViewById(R.id.imageButtonHome); // pastikan ID sama di XML
+
+        btnHome.setOnClickListener(v -> {
+            Intent intent = new Intent(Fouractivity.this, MainActivity.class);
+            startActivity(intent);
+        });
     }
 }
