@@ -8,28 +8,28 @@
     tools:context=".halamazidan">
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/bg"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <ImageView
         android:id="@+id/imageView"
-        android:layout_width="537dp"
-        android:layout_height="797dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
         android:src="@drawable/download__1_"
-        tools:layout_editor_absoluteX="-63dp"
-        tools:layout_editor_absoluteY="-114dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="371dp"
         android:layout_height="291dp"
         android:background="#212020"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="424dp">
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.846">
 
         <TextView
             android:id="@+id/textView4"
@@ -39,10 +39,12 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.072"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="16dp" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.06" />
 
         <TextView
             android:id="@+id/textView7"
@@ -50,9 +52,70 @@
             android:layout_height="189dp"
             android:text="Arc de Triomphe adalah monumen terkenal di Paris yang dibangun atas perintah Napoleon Bonaparte pada tahun 1806 untuk menghormati kemenangan militer Prancis dan para prajurit yang gugur, namun baru selesai tahun 1836 pada masa Raja Louis-Philippe; berdiri megah di ujung Champs-Élysées, monumen bergaya neoklasik ini kini juga menjadi tempat Makam Prajurit Tak Dikenal sejak 1920, sehingga melambangkan kejayaan, pengorbanan, dan semangat patriotisme bangsa Prancis."
             android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="61dp" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.617" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="425dp"
+        android:layout_height="98dp"
+        android:scaleType="center"
+        android:src="@drawable/layerbawah"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <ImageButton
+        android:id="@+id/homehome"
+        android:layout_width="76dp"
+        android:layout_height="80dp"
+        android:background="@null"
+        android:contentDescription="Home"
+        android:scaleType="fitCenter"
+        android:src="@drawable/homebutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <ImageButton
+        android:id="@+id/kembali"
+        android:layout_width="61dp"
+        android:layout_height="65dp"
+        android:background="@null"
+        android:contentDescription="Kembali"
+        android:rotationY="180"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_shadow"
+        app:layout_constraintBottom_toBottomOf="@+id/homehome"
+        app:layout_constraintEnd_toStartOf="@+id/homehome"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/homehome"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <ImageButton
+        android:id="@+id/selanjutnya"
+        android:layout_width="66dp"
+        android:layout_height="63dp"
+        android:background="@null"
+        android:contentDescription="Selanjutnyas"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_shadow"
+        app:layout_constraintBottom_toBottomOf="@+id/homehome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toEndOf="@+id/homehome"
+        app:layout_constraintTop_toTopOf="@+id/homehome"
+        app:layout_constraintVertical_bias="0.2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

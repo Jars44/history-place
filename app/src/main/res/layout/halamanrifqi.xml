@@ -15,14 +15,48 @@
             android:layout_height="wrap_content">
 
             <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="424dp"
+                android:layout_height="91dp"
+                android:layout_marginTop="800dp"
+                android:layout_marginEnd="16dp"
+                android:scaleType="center"
+                app:layout_constraintBottom_toBottomOf="@+id/background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/layerbawah" />
+
+            <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
                 android:layout_height="410dp"
+                android:contentDescription="@string/bangunanpng"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/brandenburg"
-                android:contentDescription="@string/bangunanpng"/>
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/brandenburg" />
+
+            <ImageButton
+                android:id="@+id/buttonback"
+                android:layout_width="76dp"
+                android:layout_height="62dp"
+                android:background="@null"
+                android:contentDescription="Button Previous"
+                android:rotationY="-180"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/btnhome"
+                app:layout_constraintEnd_toStartOf="@+id/btnhome"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view3"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/img_shadow" />
 
             <View
                 android:id="@+id/view2"
@@ -55,8 +89,8 @@
 
             <View
                 android:id="@+id/view3"
-                android:layout_width="match_parent"
-                android:layout_height="410dp"
+                android:layout_width="382dp"
+                android:layout_height="379dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
@@ -64,9 +98,10 @@
                 android:padding="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -82,10 +117,10 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView3"
                 app:layout_constraintEnd_toEndOf="@+id/view3"
-                app:layout_constraintHorizontal_bias="0.511"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/view3"
                 app:layout_constraintTop_toTopOf="@+id/view3"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.127" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -97,41 +132,40 @@
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/view3"
-                app:layout_constraintHorizontal_bias="0.343"
+                app:layout_constraintHorizontal_bias="0.478"
                 app:layout_constraintStart_toStartOf="@+id/view3"
                 app:layout_constraintTop_toTopOf="@+id/view3"
-                app:layout_constraintVertical_bias="0.837" />
+                app:layout_constraintVertical_bias="0.277" />
 
             <ImageButton
                 android:id="@+id/buttongo"
-                android:layout_width="63dp"
-                android:layout_height="54dp"
+                android:layout_width="69dp"
+                android:layout_height="63dp"
                 android:background="@null"
                 android:contentDescription="@string/bangunanpng"
                 android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/btnhome"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.988"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.359"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toEndOf="@+id/btnhome"
+                app:layout_constraintTop_toTopOf="@+id/btnhome"
+                app:layout_constraintVertical_bias="0.8"
                 app:srcCompat="@drawable/img_shadow" />
 
             <ImageButton
-                android:id="@+id/buttonback"
-                android:layout_width="49dp"
-                android:layout_height="51dp"
+                android:id="@+id/btnhome"
+                android:layout_width="85dp"
+                android:layout_height="74dp"
                 android:background="@null"
-                android:contentDescription="Button Previous"
-                android:rotationY="-180"
+                android:contentDescription="Home"
                 android:scaleType="fitCenter"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.042"
+                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.359"
-                app:srcCompat="@drawable/img_shadow" />
+                app:layout_constraintTop_toBottomOf="@+id/view3"
+                app:layout_constraintVertical_bias="0.428"
+                app:srcCompat="@drawable/homebutton" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
