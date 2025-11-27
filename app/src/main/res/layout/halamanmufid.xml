@@ -55,25 +55,28 @@
         android:id="@+id/imagewaveatas"
         android:layout_width="416dp"
         android:layout_height="85dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/wave"
-        tools:layout_editor_absoluteY="102dp"
-        android:contentDescription="@null"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167"
+        app:srcCompat="@drawable/wave" />
 
     <ImageView
         android:id="@+id/imagewavebawah"
         android:layout_width="473dp"
         android:layout_height="88dp"
+        android:contentDescription="@null"
         android:rotationX="180"
         android:rotationY="180"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/wave"
-        tools:layout_editor_absoluteY="407dp"
-        android:contentDescription="@null"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623"
+        app:srcCompat="@drawable/wave" />
 
     <ImageView
         android:id="@+id/bangunannobg"
@@ -82,7 +85,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/nobg"
-        android:contentDescription="C@string/bangunanpng"/>
+        android:contentDescription="@string/bangunanpng"/>
 
     <TextView
         android:id="@+id/judul"

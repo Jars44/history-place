@@ -15,6 +15,12 @@
             android:name=".halamanfajar"
             android:exported="false" />
         <activity
+            android:name=".halamazidan"
+            android:exported="false" />
+        <activity
+            android:name=".halamanzidan"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

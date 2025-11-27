@@ -10,9 +10,15 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/bg"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:contentDescription="@null"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bg" />
 
     <TextView
         android:id="@+id/textView2"
@@ -22,16 +28,49 @@
         android:text="Colosseum"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="244dp"
         android:layout_height="162dp"
-        app:srcCompat="@drawable/interior_colosseum_rome"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="541dp" />
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956"
+        app:srcCompat="@drawable/interior_colosseum_rome" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="386dp"
+        android:layout_height="113dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/scrap"
+        android:contentDescription="Scrap"/>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="385dp"
+        android:layout_height="124dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.657"
+        app:srcCompat="@drawable/scrap"
+        android:contentDescription="@null"/>
 
     <TextView
         android:id="@+id/textView"
@@ -40,31 +79,81 @@
         android:text="Koloseum (bahasa Latin: Colosseum atau Colisseum;[1] bahasa Italia: Colosseo) adalah sebuah peninggalan bersejarah berupa arena gladiator, dibangun oleh Vespasian. Tempat pertunjukan yang besar berbentuk elips yang disebut amfiteater atau dengan nama aslinya Amphitheatrum Flavium, yang termasuk salah satu dari Enam Puluh Sembilan Keajaiban Dunia Pertengahan. Situs ini terletak di kota kecil di Italia, Roma, yang didirikan oleh Wali kota Vespasianus pada masa Domitianus dan diselesaikan oleh anaknya Titus,[2] dan menjadi salah satu karya terbesar dari arsitektur Kekaisaran Romawi yang pernah dibangun. Koloseum dirancang untuk menampung 50.000 orang penonton."
         android:textColor="#FFFFFF"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="297dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="177dp"
         android:layout_height="152dp"
-        app:srcCompat="@drawable/colosseo_2020"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="112dp" />
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184"
+        app:srcCompat="@drawable/colosseo_2020" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="265dp"
         android:layout_height="251dp"
-        app:srcCompat="@drawable/pngtree_old_picture_frame_png_image_11513099"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="59dp" />
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122"
+        app:srcCompat="@drawable/pngtree_old_picture_frame_png_image_11513099" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="304dp"
         android:layout_height="215dp"
-        app:srcCompat="@drawable/antique_gold_picture_frame_isolated_on_transparent_background_png"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="516dp" />
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/antique_gold_picture_frame_isolated_on_transparent_background_png" />
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="54dp"
+        android:layout_height="62dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128"
+        app:srcCompat="@drawable/img_shadow"
+        android:contentDescription="Button Next"/>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="54dp"
+        android:layout_height="62dp"
+        android:background="@null"
+        android:rotationY="-180"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912"
+        app:srcCompat="@drawable/img_shadow"
+        android:contentDescription="Button Previous"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
